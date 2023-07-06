@@ -6,7 +6,7 @@ namespace OOP1WritePlayerClass
         {
             Player player = new Player();
 
-            player.WritePlayerInfo();
+            player.WriteInfo();
         }
     }
 
@@ -45,7 +45,7 @@ namespace OOP1WritePlayerClass
             PlayerEnergy = energyValue;
         }
 
-        public void WritePlayerInfo()
+        public void WriteInfo()
         {
             Console.WriteLine($"Player name: {Name}");
             Console.WriteLine($"Age: {Age}");
