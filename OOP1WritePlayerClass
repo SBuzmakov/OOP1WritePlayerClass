@@ -16,10 +16,10 @@ namespace OOP1WritePlayerClass
         public int Age;
         public string Sex;
         public int Level;
-        public int PlayerStrength;
-        public int PlayerAgility;
-        public int PlayerVitality;
-        public int PlayerEnergy;
+        public int StrengthValue;
+        public int AgilityValue;
+        public int VitalityValue;
+        public int EnergyValue;
 
         public Player()
         {
@@ -27,10 +27,10 @@ namespace OOP1WritePlayerClass
             Age = 33;
             Sex = "male";
             Level = 1;
-            PlayerStrength = 1;
-            PlayerAgility = 1;
-            PlayerVitality = 1;
-            PlayerEnergy = 1;
+            StrengthValue = 1;
+            AgilityValue = 1;
+            VitalityValue = 1;
+            EnergyValue = 1;
         }
 
         public Player(string name, int age, string sex, int level, int strengthValue, int agilityValue, int vitalityValue, int energyValue)
@@ -39,10 +39,10 @@ namespace OOP1WritePlayerClass
             Age = age;
             Sex = sex;
             Level = level;
-            PlayerStrength = strengthValue;
-            PlayerAgility = agilityValue;
-            PlayerVitality = vitalityValue;
-            PlayerEnergy = energyValue;
+            StrengthValue = strengthValue;
+            AgilityValue = agilityValue;
+            VitalityValue = vitalityValue;
+            EnergyValue = energyValue;
         }
 
         public void WriteInfo()
@@ -51,10 +51,10 @@ namespace OOP1WritePlayerClass
             Console.WriteLine($"Age: {Age}");
             Console.WriteLine($"Sex: {Sex}");
             Console.WriteLine($"Level: {Level}");
-            Console.WriteLine($"Strength: {PlayerStrength}");
-            Console.WriteLine($"Agility: {PlayerAgility}");
-            Console.WriteLine($"Vitality: {PlayerVitality}");
-            Console.WriteLine($"Energy: {PlayerEnergy}");
+            Console.WriteLine($"Strength: {StrengthValue}");
+            Console.WriteLine($"Agility: {AgilityValue}");
+            Console.WriteLine($"Vitality: {VitalityValue}");
+            Console.WriteLine($"Energy: {EnergyValue}");
 
             Console.ReadLine();
         }
