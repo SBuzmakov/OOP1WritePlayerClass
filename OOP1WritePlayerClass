@@ -12,38 +12,38 @@ namespace OOP1WritePlayerClass
 
     class Player
     {
-        private string Name;
-        private int Age;
-        private string Sex;
-        private int Level;
-        private int StrengthValue;
-        private int AgilityValue;
-        private int VitalityValue;
-        private int EnergyValue;
+        private string _name;
+        private int _age;
+        private string _sex;
+        private int _level;
+        private int _strengthValue;
+        private int _agilityValue;
+        private int _vitalityValue;
+        private int _energyValue;
 
         public Player(string name = "Sergey", int age = 33, string sex = "male", int level = 1, int strengthValue = 1, int agilityValue = 1, int vitalityValue = 1,
             int energyValue = 1)
         {
-            Name = name;
-            Age = age;
-            Sex = sex;
-            Level = level;
-            StrengthValue = strengthValue;
-            AgilityValue = agilityValue;
-            VitalityValue = vitalityValue;
-            EnergyValue = energyValue;
+            _name = name;
+            _age = age;
+            _sex = sex;
+            _level = level;
+            _strengthValue = strengthValue;
+            _agilityValue = agilityValue;
+            _vitalityValue = vitalityValue;
+            _energyValue = energyValue;
         }
 
         public void WriteInfo()
         {
-            Console.WriteLine($"Player name: {Name}");
-            Console.WriteLine($"Age: {Age}");
-            Console.WriteLine($"Sex: {Sex}");
-            Console.WriteLine($"Level: {Level}");
-            Console.WriteLine($"Strength: {StrengthValue}");
-            Console.WriteLine($"Agility: {AgilityValue}");
-            Console.WriteLine($"Vitality: {VitalityValue}");
-            Console.WriteLine($"Energy: {EnergyValue}");
+            Console.WriteLine($"Player name: {_name}");
+            Console.WriteLine($"Age: {_age}");
+            Console.WriteLine($"Sex: {_sex}");
+            Console.WriteLine($"Level: {_level}");
+            Console.WriteLine($"Strength: {_strengthValue}");
+            Console.WriteLine($"Agility: {_agilityValue}");
+            Console.WriteLine($"Vitality: {_vitalityValue}");
+            Console.WriteLine($"Energy: {_energyValue}");
 
             Console.ReadLine();
         }
